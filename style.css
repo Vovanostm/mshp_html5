@@ -1,0 +1,82 @@
+﻿/* Styles go here */
+/*
+COLOR THEME
+https://color.adobe.com/ru/Defrost-1-color-theme-4302971/
+*/
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300,700&subset=latin,cyrillic);
+
+body {
+  color: #2C3E50;  
+  background-color: white;
+  font-family: Calibri;
+  font-size: 1.3em;
+  padding:0px;
+  margin:0px;
+}
+
+
+
+main {
+  width: 1000px;
+  margin: auto;
+  padding: 20px 60px 0;
+  border-left:1px solid black;
+  border-right:1px solid black;
+  border-color: #D6DDE3;
+}
+
+footer {
+  height: 80px;
+}
+
+h1 {
+  color: #E74C3C;
+  font-family: Comfortaa ;
+  font-weight: 700;
+  
+}
+
+h2 {
+  border-bottom: 1px solid #2980B9;
+  margin-bottom: 40px;
+  color: #3498DB;
+  font-family: Comfortaa ;
+  font-weight: 300;
+}
+
+p {
+  padding: 0px 20px;
+}
+
+.target_list>li:nth-child(2n+1) {
+ /* font-weight: 600;*/
+  color: #344991;
+  margin-bottom: 12px;
+}
+
+.target_list>li:nth-child(2n) {
+  list-style: none;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.interesting{
+  /*
+  background-image: url(http://cs633921.vk.me/v633921000/15e1c/fzs41Q3SuI4.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  */
+  background-size: 70px 70px;
+  padding: 15px 20px 20px 20px;
+  border: 1px dashed #3498DB;
+  
+}
+
+.interesting:before{
+  content:'Интересный факт!';
+  display:block;
+  border-bottom: 2px solid #666;
+  font-size: 1.2em;
+  width: 200px;
+  margin-bottom: 12px;
+}
