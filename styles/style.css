@@ -7,6 +7,14 @@ https://color.adobe.com/ru/Defrost-1-color-theme-4302971/
 */
 
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:300,700&subset=latin,cyrillic);
+
+
+
+header
+{
+  text-align:center;
+}
+
 body {
   color: #2C3E50;
   background-color: white;
@@ -17,9 +25,9 @@ body {
 }
 
 main {
-  width: 1000px;
+  width: 80%;
   margin: auto;
-  padding: 20px 60px 0;
+  padding: 20px 3% 0;
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-color: #D6DDE3;
@@ -104,3 +112,12 @@ p {
 #client-server {
   width: 250px;
 }
+
+@media handheld, screen and (max-width: 850px) {
+  body
+  {
+    font-size:1.3em;
+    /*background-color:red;*/
+  }
+}
+
