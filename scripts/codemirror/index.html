@@ -1,0 +1,226 @@
+<!doctype html>
+
+<title>CodeMirror</title>
+
+<meta charset="utf-8"/>
+<link rel=stylesheet href="lib/codemirror.css">
+<link rel=stylesheet href="doc/docs.css">
+<script src="lib/codemirror.js"></script>
+<script src="mode/xml/xml.js"></script>
+<script src="mode/javascript/javascript.js"></script>
+<script src="mode/css/css.js"></script>
+<script src="mode/htmlmixed/htmlmixed.js"></script>
+<script src="addon/edit/matchbrackets.js"></script>
+<script src="doc/activebookmark.js"></script>
+
+<style>
+  .CodeMirror { height: auto; border: 1px solid #ddd; }
+  .CodeMirror pre { padding-left: 7px; line-height: 1.25; }
+</style>
+
+<body>
+
+  <div class="tabs">
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1" title="Вкладка 1">Вкладка 1</label>
+
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2" title="Вкладка 2">Вкладка 2</label>
+
+    <input id="tab3" type="radio" name="tabs">
+    <label for="tab3" title="Вкладка 3">Вкладка 3</label>
+
+    <textarea name="task-1-1" id="content1" cols="100" rows="23" disabled>
+Строчные элементы Строчными называются такие элементы веб-страницы, которые являются непосредственной частью другого элемента, например, текстового абзаца. В основном они используются для изменения вида текста или его логического выделения. Тег <b>
+Устанавливает жирное начертание шрифта.
+Тег <br>
+Перенос строки.
+Тег <em>
+Предназначен для акцентирования текста.
+Тег <i>
+Устанавливает курсивное начертание шрифта.
+Тег <q>
+Используется для выделения в тексте цитат.
+Тег <s>
+Отображает текст как перечеркнутый.
+Тег <span>
+Универсальный строчный элемент.
+Тег <strong>
+Акцентирует текст, обычно жирным начертанием.
+Тег <u>
+Добавляет подчеркивание к тексту.
+    </textarea>
+    
+    
+<textarea name="task-1-1"  cols="100" id="content2" disabled>
+<h1>Строчные элементы</h1>
+<p>Строчными называются такие элементы веб-страницы, которые являются непосредственной частью другого элемента, например, текстового абзаца. В основном они используются для изменения вида текста или его логического выделения.</p>
+<h2>Тег &amp;lt;b&amp;gt;</h2>
+<p>Устанавливает жирное начертание шрифта.</p>
+<h2>Тег &amp;lt;br&amp;gt;</h2>
+<p>Перенос строки.</p>
+<h2>Тег &amp;lt;em&amp;gt;</h2>
+<p>Предназначен для акцентирования текста</p>
+<h2>Тег &amp;lt;i&amp;gt;</h2>
+<p>Устанавливает курсивное начертание шрифта.</p>
+<h2>Тег &amp;lt;q&amp;gt;</h2>
+<p>Используется для выделения в тексте цитат.</p>
+<h2>Тег &amp;lt;s&amp;gt;</h2>
+<p>Отображает текст как перечеркнутый.</p>
+<h2>Тег &amp;lt;span&amp;gt;</h2>
+<p>Универсальный строчный элемент.</p>
+<h2>Тег &amp;lt;strong&amp;gt;</h2>
+<p>Акцентирует текст, обычно жирным начертанием.</p>
+<h2>Тег &amp;lt;u&amp;gt;</h2>
+<p>Добавляет подчеркивание к тексту.</p>
+</textarea>
+    
+    
+    <section id="content3">
+<h1>Строчные элементы</h1>
+<p>Строчными называются такие элементы веб-страницы, которые являются непосредственной частью другого элемента, например, текстового абзаца. В основном они используются для изменения вида текста или его логического выделения.</p>
+<h2>Тег &lt;b&gt;</h2>
+<p>Устанавливает жирное начертание шрифта.</p>
+<h2>Тег &lt;br&gt;</h2>
+<p>Перенос строки.</p>
+<h2>Тег &lt;em&gt;</h2>
+<p>Предназначен для акцентирования текста</p>
+<h2>Тег &lt;i&gt;</h2>
+<p>Устанавливает курсивное начертание шрифта.</p>
+<h2>Тег &lt;q&gt;</h2>
+<p>Используется для выделения в тексте цитат.</p>
+<h2>Тег &lt;s&gt;</h2>
+<p>Отображает текст как перечеркнутый.</p>
+<h2>Тег &lt;span&gt;</h2>
+<p>Универсальный строчный элемент.</p>
+<h2>Тег &lt;strong&gt;</h2>
+<p>Акцентирует текст, обычно жирным начертанием.</p>
+<h2>Тег &lt;u&gt;</h2>
+<p>Добавляет подчеркивание к тексту.</p>
+    </section>
+</div>
+
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("content2"), {
+      lineNumbers: true,
+      mode: "text/html",
+      matchBrackets: true
+    });
+
+    var editor = CodeMirror.fromTextArea(document.getElementById("demotext2"), {
+      lineNumbers: true,
+      mode: "text/css",
+      matchBrackets: true
+    });
+  </script>
+
+<style>
+  pre {
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+    /* Базовый контейнер табов */
+    
+    .tabs {
+      min-width: 320px;
+      max-width: 800px;
+      padding: 0px;
+      margin: 0 auto;
+    }
+    /* стили секций с содержанием */
+    
+    section {
+      display: none;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+    
+    .tabs input, .tabs code, .tabs textarea {
+      display: none;
+    }
+
+    .tabs>textarea + div {
+    	display:none;
+    }
+    /* стили вкладок (табов) */
+    
+    .tabs label {
+      display: inline-block;
+      margin: 0 0 -1px;
+      padding: 15px 25px;
+      font-weight: 600;
+      text-align: center;
+      color: #aaa;
+      border: 1px solid #ddd;
+      background: #f1f1f1;
+      border-radius: 3px 3px 0 0;
+    }
+    /* шрифт-иконки от Font Awesome в формате Unicode */
+    
+    .tabs label:before {
+      font-family: fontawesome;
+      font-weight: normal;
+      margin-right: 10px;
+    }
+    
+    .tabs label[for*="1"]:before {
+      content: "Задание";
+    }
+    
+    .tabs label[for*="2"]:before {
+      content: "Код решения";
+    }
+    
+    .tabs label[for*="3"]:before {
+      content: "Решение";
+    }
+    /* изменения стиля заголовков вкладок при наведении */
+    
+    .tabs label:hover {
+      color: #888;
+      cursor: pointer;
+    }
+    /* стили для активной вкладки */
+    
+    .tabs input:checked + label {
+      color: #555;
+      border: 1px solid #ddd;
+      border-top: 1px solid #009933;
+      border-bottom: 1px solid #fff;
+      background: #fff;
+    }
+    /* активация секций с помощью переключателя :checked */
+    
+    #tab1:checked ~ #content1,
+    #tab2:checked ~ #content2,
+    #tab2:checked ~ #content2 + div,
+    #tab3:checked ~ #content3 {
+      display: block;
+    }
+    /* медиа запросы для различных типов носителей */
+    
+    @media screen and (max-width: 680px) {
+      .tabs label {
+        font-size: 0;
+      }
+      .tabs label:before {
+        margin: 0;
+        font-size: 18px;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+      .tabs label {
+        padding: 15px;
+      }
+    }
+    
+    textarea {
+      resize: none;
+      border-color: #ddd;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: white;
+    }
+  </style>
