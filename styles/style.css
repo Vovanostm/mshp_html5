@@ -6,7 +6,8 @@ COLOR THEME
 https://color.adobe.com/ru/Defrost-1-color-theme-4302971/
 */
 
-@import url(https://fonts.googleapis.com/css?family=Comfortaa:300,700&subset=latin,cyrillic);
+/* Styles go here */
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300&subset=cyrillic,latin);
 
 
 
@@ -38,8 +39,8 @@ footer {
 }
 
 h1 {
-  color: #E74C3C;
-  font-family: Comfortaa;
+  color: #2C3E50;
+  font-family: "Exo 2";
   font-weight: 700;
 }
 
@@ -47,7 +48,7 @@ h2 {
   border-bottom: 1px solid #2980B9;
   margin-bottom: 40px;
   color: #3498DB;
-  font-family: Comfortaa;
+  font-family: "Exo 2";
   font-weight: 300;
 }
 
@@ -91,7 +92,6 @@ p {
 }
 
 .info {
-  color: #E74C3C;
   color: #2C3E50;
   border-left: 5px solid #E74C3C;
   font-weight: 700;
