@@ -59,6 +59,7 @@ p {
 .clearfix>img {
   float: left;
   margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 .clearfix:after {
@@ -104,15 +105,32 @@ p {
   margin: -1px 0px 0px 20px;
 }
 
+.info + .dir, .dir + .info 
+{
+  margin-top: 20px;
+}
+
+dfn {
+  color: #2C3E50;
+  font-weight: 400;
+}
 .desc {
   color: #2C3E50;
   font-weight: 400;
 }
 
-#client-server {
+#img_client-server {
   width: 250px;
 }
 
+#img_dom {
+  width: 700px;
+}
+
+#img_tags-types
+{
+  width: 500px;
+}
 @media handheld, screen and (max-width: 850px) {
   body
   {
