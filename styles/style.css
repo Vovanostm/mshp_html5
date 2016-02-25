@@ -1,4 +1,4 @@
-﻿/* Styles go here */
+/* Styles go here */
 
 
 /*
@@ -114,6 +114,7 @@ dfn {
   color: #2C3E50;
   font-weight: 400;
 }
+
 .desc {
   color: #2C3E50;
   font-weight: 400;
@@ -134,8 +135,8 @@ dfn {
 @media handheld, screen and (max-width: 850px) {
   body
   {
+    width: 100%;
     font-size:1.3em;
-    /*background-color:red;*/
   }
 }
 
