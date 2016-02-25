@@ -135,7 +135,7 @@ dfn {
 @media handheld, screen and (max-width: 850px) {
   body
   {
-    width: 100%;
+    width: 180%;
     font-size:1.3em;
   }
 }
