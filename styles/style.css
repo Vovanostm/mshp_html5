@@ -30,7 +30,7 @@ main {
   min-width: 60%;  
   max-width: 100%;
   margin: auto;
-  
+
   padding: 20px 3% 0;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -121,6 +121,10 @@ dfn {
 .desc {
   color: #2C3E50;
   font-weight: 400;
+}
+
+img {
+  max-width: 100%;
 }
 
 #img_client-server {
