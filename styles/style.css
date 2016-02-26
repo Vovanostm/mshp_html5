@@ -27,8 +27,8 @@ body {
 
 main {
   width: 1000px;
-  min-width: 60%;  
-  max-width: 100%;
+  min-width: 55%;  
+  max-width: 92%;
   margin: auto;
 
   padding: 20px 3% 0;
@@ -142,7 +142,7 @@ img {
 @media handheld, screen and (max-width: 850px) {
   body
   {
-    font-size:1.3em;
+    font-size:1.2em;
   }
 }
 
