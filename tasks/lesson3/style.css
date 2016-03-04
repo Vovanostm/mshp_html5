@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:200,400&subset=latin,cyrillic);
 
-header, main, section, article, hgroup, aside, footer {
+header, main, section, article, hgroup, aside, footer, nav {
 	display: block;
 	border: 1px solid #bbb;
 	border-radius: 10px;
@@ -17,7 +17,9 @@ header, main, section, article, hgroup, aside, footer {
 
 body>header, 
 body>main, 
-body>footer {
+body>footer,
+body>section,
+body>nav {
 	width: 980px;
 	margin: 20px auto;
 }
@@ -40,17 +42,18 @@ p:hover {
 
 body>*:hover { background-color: #CCFFCC }
 body>*>*:hover { background-color: #BEFDDE }
-body>*>*>*:hover { background-color: #CCFFFF }
-body>*>*>*>*:hover  { background-color: #C7F0F9 }
+body>*>*>*:hover { background-color: #C7F0F9 }
+/*body>*>*>*>*:hover  { background-color: #CCFFFF } */
 
 
-header:after,
-main:after,
-section:after,
-article:after,
-hgroup:after,
-aside:after,
-footer:after {
+header:before,
+main:before,
+section:before,
+article:before,
+hgroup:before,
+aside:before,
+footer:before,
+nav:before {
 	display: block;
 	position: absolute;
 	top: 5px;
@@ -61,13 +64,14 @@ footer:after {
 	color: rgba(0,0,0,0.40);	
 }
 
-header:after {content:'header';}
-main:after {content:'main';}
-section:after {content:'section';}
-article:after {content:'article';}
-hgroup:after {content:'hgroup';}
-aside:after {content:'aside';}
-footer:after {content:'footer';}
+header:before {content:'header';}
+main:before {content:'main';}
+section:before {content:'section';}
+article:before {content:'article';}
+hgroup:before {content:'hgroup';}
+aside:before {content:'aside';}
+footer:before {content:'footer';}
+nav:before {content:'nav';}
 
 aside {
 	float: right;
@@ -87,6 +91,11 @@ h2 {
 	color: #666;
 }
 
+article>h1
+{
+	margin-left: 20px;
+	padding: 20px;
+}
 cite {
 	color: #C42714;
 	font-family: Times;
@@ -97,4 +106,24 @@ time[datetime] {
 	padding: 0px 2px;
 	border-radius: 4px;
 	background-color: #eee;
+}
+
+em {
+	background-color: rgba(255,100,0,0.3);
+	padding: 0 2px;
+	font-style: normal;
+}
+
+section {
+	background-image: url(img/logo_main.png);
+	-webkit-background-size: 200px;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	background-position: 25px 25px;
+	min-height: 90px;
+}
+
+section>p {
+	font-size: 1.5em;
+	margin-left: 220px;
 }
