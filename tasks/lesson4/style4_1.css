@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC);
+@import url(https://fonts.googleapis.com/css?family=Luckiest+Guy);	
+
+.task1>span, .task1>strong
+{
+	font-family: 'Bowlby One SC';
+	font-size: 50px;
+	line-height: 40px;
+	color: rgb(33,33,33);
+}
+
+.task1>strong {
+	font-size: 85px;
+	line-height: 90px;
+	text-decoration: underline;
+	color: rgb(140,0,0);
+}
+
+
+.task2
+{
+	font-family: 'Luckiest Guy';
+}
+
+.task2>strong {font-size: 140px; line-height: 125px;}
+.task2>em {font-size: 68px; line-height: 70px;}
+.task2>span {font-size: 62px; line-height: 70px;}
+.task2>.btmstrng {font-size: 135px; line-height: 80px; }
+
+.task2>em {
+	background-color: rgb(140,0,0);
+	color: white;
+	font-style: normal;	
+}
+
+
+
+
+div {
+	margin: 150px 0;
+}
+
+img {
+	position: absolute;
+	z-index: -1;
+	left: 850px;
+}
