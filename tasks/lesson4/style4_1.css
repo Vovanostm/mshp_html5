@@ -1,7 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC);
 @import url(https://fonts.googleapis.com/css?family=Luckiest+Guy);	
+@import url(https://fonts.googleapis.com/css?family=McLaren);
+@import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One&subset=latin,cyrillic);
 
-.task1>span, .task1>strong
+
+.task-hunter
+{
+	font-family: 'Rubik Mono One';
+	font-size: 30px;
+	color: #333;
+}
+
+.word1 {background-color: red;}
+.word2 {background-color: orange;}
+.word3 {background-color: yellow;}
+.word4 {background-color: green;}
+.word5 {background-color: blue;}
+.word6 {background-color: CornflowerBlue;}
+.word7 {background-color: DarkViolet;}
+
+.task-know>span, .task-know>strong
 {
 	font-family: 'Bowlby One SC';
 	font-size: 50px;
@@ -9,7 +27,7 @@
 	color: rgb(33,33,33);
 }
 
-.task1>strong {
+.task-know>strong {
 	font-size: 85px;
 	line-height: 90px;
 	text-decoration: underline;
@@ -17,23 +35,85 @@
 }
 
 
-.task2
+.task-war
 {
 	font-family: 'Luckiest Guy';
 }
 
-.task2>strong {font-size: 140px; line-height: 125px;}
-.task2>em {font-size: 68px; line-height: 70px;}
-.task2>span {font-size: 62px; line-height: 70px;}
-.task2>.btmstrng {font-size: 135px; line-height: 80px; }
+.task-war>strong {font-size: 140px; line-height: 125px;}
+.task-war>em {font-size: 68px; line-height: 70px;}
+.task-war>span {font-size: 62px; line-height: 70px;}
+.task-war>.btmstrng {font-size: 135px; line-height: 80px; }
 
-.task2>em {
+.task-war>em {
 	background-color: rgb(140,0,0);
 	color: white;
 	font-style: normal;	
 }
 
+.task-Google {
+	font-family: 'McLaren';
+	font-size: 100px;
+	letter-spacing: -10px;
+	font-weight: 900;
+}
 
+.task-Google>.letter1, .task-Google>.letter4 {color: rgb(66, 133, 244);}
+.task-Google>.letter2, .task-Google>.letter6 {color: rgb(234, 67, 53);}
+.task-Google>.letter3 {color: rgb(251, 188, 5);}
+.task-Google>.letter5 {color: rgb(52, 168, 83);}
+
+.out
+{
+	width:780px;
+	height: 405px;
+	background-color: #333;
+	padding: 10px;
+}
+
+.out:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.header
+{
+	height: 50px;
+	background-color: #ddd;
+	margin:0px;
+}
+
+.left
+{
+	float: left;
+	width: 250px;
+	height: 345px;
+	background-color: rgb(171,62,65);
+	margin-top: 10px;
+}
+
+.right {
+	float: right;
+	width: 520px;
+	height: 345px;
+	background-color: rgb(171,62,65);
+	margin-top: 10px;
+}
+
+.rtop
+{
+	margin: 0px;
+	background-color: rgb(171,62,65);
+	height: 225px;
+}
+
+.rbtm 
+{
+	background-color: #333;
+	height: 120px;
+	margin: 0px;
+}
 
 
 div {
@@ -44,4 +124,9 @@ img {
 	position: absolute;
 	z-index: -1;
 	left: 850px;
+}
+
+p {
+	margin-top: 45px;
+	font-size: 1.3em;
 }
