@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:200,400&subset=latin,cyrillic);
+
+header, main, section, article, hgroup, aside, footer, nav, ul, p, h1,h2,h3 {
+	display: block;
+	border: 1px solid #bbb;
+	border-radius: 10px;
+	padding: 25px;
+	margin: 20px;
+	position: relative;
+	background-color: #fff;
+	-webkit-transition: all 1.2s;
+	-o-transition: all 1.2s;
+	transition: all 1.2s;
+	color: #444;
+}
+
+body>header, 
+body>main, 
+body>footer,
+body>section,
+body>nav {
+	width: 980px;
+	margin: 20px auto;
+}
+
+article {
+	margin-bottom: 50px;
+}
+
+
+body>*:hover { background-color: #CCFFCC }
+body>*>*:hover { background-color: #BEFDDE }
+body>*>*>*:hover { background-color: #C7F0F9 }
+/*body>*>*>*>*:hover  { background-color: #CCFFFF } */
+
+
+header:before,
+main:before,
+section:before,
+article:before,
+hgroup:before,
+aside:before,
+footer:before,
+nav:before,
+ul:before,
+p:before,
+h1:before,
+h2:before,
+h3:before {
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 5px;	
+	font-family: arial;
+	font-weight: 700;
+	font-style: normal;
+	color: rgba(0,0,0,0.40);	
+	font-size: 15px;
+}
+
+header:before {content:'header';}
+main:before {content:'main';}
+section:before {content:'section';}
+article:before {content:'article';}
+hgroup:before {content:'hgroup';}
+aside:before {content:'aside';}
+footer:before {content:'footer';}
+nav:before {content:'nav';}
+ul:before {content:'ul';}
+p:before {content:'p';}
+h1:before {content:'h1';}
+h2:before {content:'h2';}
+h3:before {content:'h3';}
+
+aside {
+	float: right;
+	width: 30%;
+	font-style: italic;
+}
+
+article>h1
+{
+	margin-left: 20px;
+	padding: 20px;
+}
+
+section {
+	background-image: url(img/logo_main.png);
+	-webkit-background-size: 200px;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	background-position: 45px 25px;
+	min-height: 90px;
+}
+
+section>p {
+	font-size: 1.5em;
+	margin-left: 220px;
+}
+
+a {
+	display: block;
+	text-decoration: underline;
+	color: blue;
+	padding: 5px;
+	margin-left: 20px;
+}
+
+a:hover {
+	cursor: pointer;	
+}
