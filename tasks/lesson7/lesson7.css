@@ -1,0 +1,5 @@
+.btn_img, .btn_txt
+{
+	display: inline-block;
+	height: 32px;
+}

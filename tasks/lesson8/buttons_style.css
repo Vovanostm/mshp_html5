@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.btn_img, .btn_txt
+{
+	display: inline-block;
+	height: 32px;
+	vertical-align: top;
+	padding: 8px;
+	border: 1px solid #3D0734;
+}
+
+.btn_img {
+	background-color: #991A83;
+	margin-right: -5px;
+}
+
+.btn_txt {
+	background-color: #E118BF;
+	font-family: 'Open Sans';
+	font-size: 20px;
+	color: #eee;
+	width: 128px;
+	text-align: center;
+}
+
+.btn:hover { cursor: pointer; }
+.btn:hover .btn_txt { background-color: #991A83; color: #fff;}
+.btn:hover .btn_img { background-color: #3D0734; }
+
+.column {
+	width: 200px;
+	margin: -6px;
+	display: inline-block;
+}
+
+.btn {
+	margin-bottom: -1px;
+	background-color: #fff;
+}
