@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+		.btn_img, .btn_txt
+		{
+			display: inline-block;
+			height: 32px;
+			vertical-align: top;
+			padding: 8px;
+			border: 1px solid #3D0734;
+		}
+
+		.btn_img {
+			background-color: #991A83;
+			margin-right: -5px;
+		}
+
+		.btn_txt {
+			background-color: #E118BF;
+			font-family: 'Open Sans';
+			font-size: 20px;
+			color: #eee;
+			width: 128px;
+			text-align: center;
+		}
+
+		.btn:hover { cursor: pointer; }
+		.btn:hover .btn_txt { background-color: #991A83; color: #fff;}
+		.btn:hover .btn_img { background-color: #3D0734; }
+
+		.img_here {
+			border: 1px dashed black;
+			padding: 4px;
+			background-color: #888;
+			max-width: 64px;
+		}
+
+		.tip3_img {
+			background-image: url(css_tips/cwork3_tip1.png);
+			height: 750px;
+			width: 750px;
+			background-repeat: no-repeat;
+			background-size: 750px;
+			transition: all 0.3s;
+		}
+
+		.tip3_img:hover {
+			background-image: url(css_tips/cwork3_tip.png);
+		}
+
+
+	</style>
+</head>
+<body>
+	
+    <h1>Ожидаемый результат</h1>
+	<div class="btn">
+		<img src="Icons/LoveA.png" alt="Сердечко" class="btn_img">
+		<div class="btn_txt">Love</div>
+	</div>
+	<h1>Особенности структуры</h1>
+	<p>У картинки класс btn_img, у текста класс btn_txt. И все это внутри дива с классом btn</p>
+
+	<h1>Используемые свойства:</h1>
+	<div class="tip3_img"></div>
+
+	<h1>
+		<p>Картинка для использования:
+		<img src="Icons/LoveA.png" alt="" class="img_here">
+		</p>
+
+	</h1>
+</body>
+</html>

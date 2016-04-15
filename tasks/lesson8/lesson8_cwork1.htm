@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+
+    <style>
+      .d {
+        width: 20px;
+        display: inline-block;        
+        border: 2px solid #aaa;
+      }
+
+      .d:hover {background-color: #aaa;}
+
+      .d1 {height: 20px;}
+      .d2 {height: 30px;}
+      .d3 {height: 40px;}
+      .d4 {height: 50px;}
+      .d5 {height: 60px;}
+      .d6 {height: 70px;}
+    </style>
+  </head>
+
+  <body>
+    
+    <h1>Ожидаемый результат</h1>
+    <div class="d d1"></div>
+    <div class="d d2"></div>
+    <div class="d d3"></div>
+    <div class="d d4"></div>
+    <div class="d d5"></div>
+    <div class="d d6"></div>
+
+    <h1>Особенности струтуры</h1>
+      <p>Каждый "столбец" - это div, у которого есть сразу два класса. Один класс отвечает
+      за все поведение столбца, а второй - только за высоту. 
+      <br>Реализуется так: &lt;div class="d d1">&lt;div>  
+      <br>В этом примере div обладает сразу двумя классами: "d"и "d1"</p>
+    <h1>Примечание</h1>
+    <p>Обратите внимание, что не смотря на отсутсивие настройки margin, свойство inline-block 
+    <br>создает отступ между элементами</p>
+    <h1>Используемые свойства</h1>
+    <img src="css_tips/cwork1_tip.png" alt="">
+
+</html>
