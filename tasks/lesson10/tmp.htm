@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Парочка экспериментов</title>
+
+	<style>
+		
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		main {
+			background-image: url(img/clp280454.jpg);
+			padding: 0;
+			margin:0;
+
+		}
+
+		.row {
+			max-width: 1100px;
+			width: 70%;
+			margin: 0 auto;
+			background-color: #fff;
+			padding: 0 30px;
+			height: 100%;
+			padding-bottom: 200px;
+			padding-top: 100px;
+		}
+
+		.col_1_of_2 {			
+			display: inline-block;
+			margin-right: 9%;
+			min-width: 300px;
+			width: 45%;
+		}
+
+		.right_col {
+			margin-right: 0px;
+		}
+
+
+		.cadre {
+			padding: 20px;
+			background-color: #ddd;
+			margin-bottom: 50px;
+			-webkit-transition: all 0.5s;
+			-o-transition: all 0.5s;
+			transition: all 0.5s;
+		}
+
+		.cadre:hover{
+			background-color: #e66;
+		}
+
+		.portret {
+			width: 100%;
+			height: 300px;			
+			vertical-align: top;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			-webkit-transition: all 0.5s;
+			-o-transition: all 0.5s;
+			transition: all 0.5s;		
+		}
+
+		.portret:hover {
+			-webkit-background-size: 105%;
+			background-size: 105%;	
+			cursor: pointer;
+		}
+
+		#port1{background-image: url(img/g1.jpg);}
+		#port2{background-image: url(img/g2.jpg);}
+		#port3{background-image: url(img/g3.jpg);}
+		#port4{background-image: url(img/g4.jpg);}
+
+		.color {
+			height: 100%;
+			background-color: rgba(160,160,160,0.5);
+			-webkit-transition: all 0.5s;
+			-o-transition: all 0.5s;
+			transition: all 0.5s;
+		}
+
+		.color:hover {
+			height: 100%;
+			background-color: rgba(0,0,0,0);
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div class="row">
+			<div class="col_1_of_2">
+
+				<div class="cadre">
+					<div class="portret" id="port1"><div class="color"></div></div>
+				</div>
+				<div class="cadre">
+					<div class="portret" id="port2"><div class="color"></div></div>
+				</div>
+
+			</div>
+			<div class="col_1_of_2 right_col">
+
+				<div class="cadre">
+					<div class="portret" id="port3"><div class="color"></div></div>
+				</div>
+				<div class="cadre">
+					<div class="portret" id="port4"><div class="color"></div></div>
+				</div>
+
+			</div>
+		</div>
+	</main>
+</body>
+</html>
